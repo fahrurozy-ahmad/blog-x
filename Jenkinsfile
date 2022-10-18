@@ -14,8 +14,8 @@ pipeline {
         }
         stage('hapus container') {
             steps {
-                sh 'docker rm backend'
-                sh 'docker rm webserver'
+                sh 'docker rm backend -f'
+                sh 'docker rm webserver -f'
             }
         }
         stage('up container') {
