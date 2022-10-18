@@ -1,5 +1,9 @@
 pipeline {
-    agent any
+    agent {
+        nodes {
+            label "linux && docker"
+        }
+    }
 
     stages {
         stage('build') {
