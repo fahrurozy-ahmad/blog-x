@@ -10,16 +10,7 @@ pipeline {
     }
     post{
         allways {
-            echo "hallo"
-        }
-        succeed {
-            echo "succeed"
-        }
-        failure{
-            echo "failure"
-        }
-        cleanup {
-            echo "clean"
+            echo 'hallo'
         }
     }
 }
