@@ -23,5 +23,10 @@ pipeline {
                 sh 'docker-compose up -d'
             }
         }
+        stage('selesai') {
+            steps {
+                echo 'selesai'
+            }
+        }
     }
 }
