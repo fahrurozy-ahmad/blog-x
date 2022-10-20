@@ -15,7 +15,7 @@ pipeline {
                 sh 'docker compose up -d'
             }
         }
-        stage('selesai') {
+        stage('finish') {
             steps {
                 echo 'selesai'
             }
